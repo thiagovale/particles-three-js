@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "three": "^0.158.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.1",
+    "vite": "^4.4.9"
+  }
+}

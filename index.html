@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Trabalho 02 - Computação Gráfica</title>
+    <style>
+      body {
+        top: 0;
+        margin: 0;
+        position: relative;
+      }
+      button,
+      select {
+        background-color: orange;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+      .menu {
+        position: absolute;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <!-- Dropdown para opções de iluminação -->
+      <select id="lightingOptions">
+        <option value="all">Com todas as luzes</option>
+        <option value="noAmbient">Sem a luz ambiente</option>
+        <option value="noPoint">Sem as luzes pontuais</option>
+        <option value="noLights">Sem nenhuma luz</option>
+      </select>
+
+      <!-- Dropdown para opções de partículas -->
+      <select id="particleOptions">
+        <option value="redParticles">Partícula 1</option>
+        <option value="greenParticles">Partícula 2</option>
+        <option value="blueParticles">Partícula 3</option>
+      </select>
+
+      <!-- Botão para reiniciar a animação -->
+      <button id="restartButton">Reiniciar Animação</button>
+    </div>
+    <!-- Scripts necessários, incluindo a biblioteca Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <script src="https://threejsfundamentals.org/threejs/resources/threejs/r119/examples/js/controls/OrbitControls.js"></script>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
